@@ -1,10 +1,19 @@
 package br.com.alura.dayscode.model;
 
 public class Movie {
+	private String id;
 	private String title;
 	private String image;
 	private Float imDbRating;
 	private Integer year;
+	
+	public String getId() {
+		return id;
+	}
+	
+	public void setId(String id) {
+		this.id = id;
+	}
 
 	public String getTitle() {
 		return title;
