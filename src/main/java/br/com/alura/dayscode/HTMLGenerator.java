@@ -1,9 +1,8 @@
 package br.com.alura.dayscode;
 
 import java.io.PrintWriter;
-import java.util.List;
 
-import br.com.alura.dayscode.model.Movie;
+import br.com.alura.dayscode.controller.ImdbController.ListOfMovies;
 
 public class HTMLGenerator {
 
@@ -34,7 +33,7 @@ public class HTMLGenerator {
 				</div>
 			""";
 
-	public void generate(List<Movie> items) {
+	public void generate(ListOfMovies movies) {
 		/*
 		 * Gravação Tag inicial
 		 */
@@ -49,7 +48,7 @@ public class HTMLGenerator {
 		 * Gravando corpo
 		 */
 		printWriter.println("<body>");
-		items.forEach(movie -> {
+		movies.items().forEach(movie -> {
 			//usando o template com os dados do filme			
 			printWriter.println(String.format(divTemplate, movie.getTitle(), movie.getImage(), movie.getTitle(), movie.getImDbRating(), movie.getYear()));
 		});
