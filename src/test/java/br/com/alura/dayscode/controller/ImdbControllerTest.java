@@ -28,4 +28,14 @@ public class ImdbControllerTest {
 		assertNotNull(responseEntity.getBody());
 		
 	}
+	
+	
+	@Test
+	void postAdicionarFavoritos() {
+		String idFilme = "tt0110357";
+		ResponseEntity<String> postForEntity = this.restTemplate.postForEntity("http://localhost:"+ port + "/top250/favorito/" + idFilme, null, String.class);
+		
+		assertEquals(HttpStatus.OK, postForEntity.getStatusCode());
+		assertNotNull(postForEntity.getBody());
+	}
 }
