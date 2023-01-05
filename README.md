@@ -8,6 +8,4 @@
 * Spring 6/7: Endpoint personalizado
 * Spring 7/7: Criando meu serviço de favoritos
 
-Janser3
-Marcos
-Teste Janser3
+Janser4
