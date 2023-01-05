@@ -7,3 +7,5 @@
 * Spring 5/7: Encapsulando o código
 * Spring 6/7: Endpoint personalizado
 * Spring 7/7: Criando meu serviço de favoritos
+
+Teste Janser
